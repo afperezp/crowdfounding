@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+body {
+    background: #1c1b29;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(30deg, #f739c0, #38d7fd);
+    padding: 35px 0;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    color: black;
+    text-align: center;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: 500;
+    color: silver;
+    text-align: center;
+}
+
+p {
+    margin-top: 25px;
+}
+
+.el-meme {
+    color: white;
+}
+
+.titulo-h1 {
+    color: white;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 20px 20px;
+}
+
+h3 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav {
+    background: #1c1b29;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+li>a {
+    font-family: 'Cabin', sans-serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #38d7fd;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    padding: 10px 14px;
+}
+
+li>a:hover {
+    background-color: #38d7fd;
+    border-radius: 40px;
+    transition: 0.1s ease;
+    color: #f739c0;
+}
+
+
+/* LOGO 
+
+.logo {
+    font-size: 32px;
+}
+
+*/
+
+
+/*
+#mainNav {
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    background-color: #0bbffc
+}
+*/
+
+.sticky {
+    width: 100%;
+    background: linear-gradient(30deg, #f739c0, #38d7fd);
+    position: fixed;
+    top: 0;
+    padding: 5px;
+    z-index: 9999;
+}
+
+.sticky a {
+    color: white;
+}
+
+.principal {
+    padding: 50px;
+}
+
+.smallone {
+    background-color: #fff;
+    padding: 2px;
+}
+
+.nombre {
+    font-size: 35px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.ingenuix-numeros {
+    background-color: #0bbffc;
+    width: 100%;
+    height: 500px;
+}
+
+section.iniciar-sesion {
+    background-color: #000000;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*cards*/
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+
+.card {
+    background-color: #1c1b29;
+    border-radius: 20px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.94);
+}
+
+.card1:hover {
+    transform: rotateY(180deg);
+}
+
+.card2:hover {
+    transform: rotateY(180deg);
+}
+
+.card3:hover {
+    transform: rotateY(180deg);
+}
+
+.container {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.container:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.4;
+}
+
+.card1>.container:after {
+    background-image: linear-gradient( 135deg, #0100ec, #fb36f4);
+}
+
+.card2>.container:after {
+    background-image: linear-gradient( 135deg, #2bdce3, #42ffdb);
+}
+
+.card3>.container:after {
+    background-image: linear-gradient( 135deg, #ffab1d, #f8501c);
+}
+
+.details {
+    padding: 20px 10px;
+}
+
+.details>h3 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.details>p {
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    transform: rotateY(180deg);
+}
+
+.box {
+    width: 300px;
+    margin-top: 500px;
+    padding: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    box-shadow: 30px 30px 30px rgba(211, 59, 185, 0.3);
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"] {
+    width: 200px;
+    border-color: #38d7fd;
+}
+
+.box input[type=submit] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #f739c0;
+    padding: 14px 40px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type=submit]:hover {
+    background: #f739c0;
+}
+
+.ingenuix-numeros {
+    background: linear-gradient(30deg, #f739c0, #38d7fd);
+    width: 100%;
+    height: 500px;
+}
