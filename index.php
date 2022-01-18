@@ -164,44 +164,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </nav>
   
 
-    <div class="cards">
-        <div class="card card1">
-            <div class="container">
-                <img src="images/business-5475660.jpg" alt="bussiness">
-            </div>
-            <div class="details">
-                <h3>Negocio</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
-            </div>
-        </div>
-        <div class="card card2">
-            <div class="container">
-                <img src="images/bitcoin-3089728.jpg" alt="bitcoin">
-            </div>
-            <div class="details">
-                <h3>Meme coin</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
-            </div>
-        </div>
-        <div class="card card3">
-            <div class="container">
-                <img src="images/blockchain-3277336.png" alt="blockchain">
-            </div>
-            <div class="details">
-                <h3>Blockchain</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
-            </div>
-        </div>
-        <div class="card card4">
-            <div class="container">
-                <img src="images/business-5475660.jpg" alt="bussiness">
-            </div>
-            <div class="details">
-                <h3>Ecosistema</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
-            </div>
-        </div>
-    </div>
+   
 
     
 
@@ -211,7 +174,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <h1 class="el-meme"> El Meme coin para la Comunidad.<br> Hecho por la comunidad.</h1>
         </div>
         <h3>
-            <button class= "btn btn-dark" style="background-color:#38d7fd;"; ><a style = "color: black; text-decoration: None !important;" href="login.php"> Ingresa ya y empieza a invertir.</a></button>
+            <button class= "btn btn-lg ingresar-btn" style="background-color:#38d7fd;"; ><a style = "color: black; text-decoration: None !important;" href="login.php"> Ingresa ya y empieza a invertir.</a></button>
         </h3>
         <div class="container px-4 py-5" id="featured-3">
 
@@ -265,6 +228,48 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
   
     </section>
+    <section style="margin-bottom:30px;">
+    <div class="cards">
+        <div class="card card1">
+            <div class="container">
+                <img src="images/business-5475660.jpg" alt="bussiness">
+            </div>
+            <div class="details">
+                <h3>Negocio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+            </div>
+        </div>
+        <div class="card card2">
+            <div class="container">
+                <img src="images/bitcoin-3089728.jpg" alt="bitcoin">
+            </div>
+            <div class="details">
+                <h3>Meme coin</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+            </div>
+        </div>
+        <div class="card card3">
+            <div class="container">
+                <img src="images/blockchain-3277336.png" alt="blockchain">
+            </div>
+            <div class="details">
+                <h3>Blockchain</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+            </div>
+        </div>
+        <div class="card card4">
+            <div class="container">
+                <img src="images/business-5475660.jpg" alt="bussiness">
+            </div>
+            <div class="details">
+                <h3>Ecosistema</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+            </div>
+        </div>
+    </div>
+
+
+    </section>
 
 
 
@@ -293,7 +298,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 
-
+<section>
+<div class="box" style ="width:100% !important; color:white;">
+        <h4>Más Preguntas?</h4>
+        <p>¡Consulte nuestras preguntas frecuentes y únase a Telegram para obtener soporte en vivo!</p>
+        <button class ="btn btn-lg"style ="    box-shadow: 10px 10px 10px rgba(255, 250, 255, 0.3);
+margin:20px; background-color:white; border-radius:10px;"> <a style ="text-decoration:none; color:black; " href ="#"> FAQ </a> </button> 
+</div>
+</section>
 
 <footer>
     <div class = "footer-container">

@@ -1,3 +1,7 @@
+.h1-binvenido{
+    color: #191919;
+}
+
 .welcome p{
     color: aliceblue;
 }
@@ -33,10 +37,6 @@ inner-div-2 h5{
     margin-left: 2%;
 }
 
-
-
-
-
 .mobile-app h3{
     color: aliceblue;
     font-size: 2rem;
@@ -69,4 +69,9 @@ inner-div-2 h5{
 .grid-item img{
     width: 300px;
     height: 300px;
+}
+
+
+.form-investment label{
+    color: aliceblue !important;
 }

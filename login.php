@@ -140,7 +140,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </h2>
                 <input type="text" name  = "username" placeholder ="Username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>" >
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
-                <label for="">Email</label>
+                <label for="">Username</label>
             
                 <input type="password" name  = "password" placeholder ="Password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
