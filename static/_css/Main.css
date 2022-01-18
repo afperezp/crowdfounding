@@ -134,6 +134,10 @@ li>a:hover {
 h2 {
     width: 100%;
     text-align: center;
+   
+}
+h2.features{
+    color: white !important;
 }
 
 .ingenuix-numeros {
@@ -240,6 +244,7 @@ section.iniciar-sesion {
 }
 
 .box input[type="text"],
+.box input[type="number"]:focus,
 .box input[type="password"] {
     border: 0;
     background: none;
@@ -256,6 +261,7 @@ section.iniciar-sesion {
 }
 
 .box input[type="text"]:focus,
+.box input[type="number"]:focus,
 .box input[type="password"] {
     width: 200px;
     border-color: #38d7fd;

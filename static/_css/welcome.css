@@ -1,0 +1,72 @@
+.welcome p{
+    color: aliceblue;
+}
+
+.welcome div{
+    background-color: #f739c0;
+    border-radius: 25px;
+    margin: 4rem;
+    padding: 2rem;
+}
+.inner-div{
+    background-color: white;
+}
+inner-div-2 h5{
+    background-color: aliceblue !important;
+}
+
+.box-welcome {
+    padding: 20px;
+    background: #191919;
+    text-align: center;
+    box-shadow: 30px 30px 30px rgba(230, 230, 230, 0.3);
+}
+.box-welcome h3{
+   font-size: 3rem;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+.inner-message-invest h2{
+    font-size: 3.5rem !important;
+    color: white;
+    text-align: left;
+    margin-left: 2%;
+}
+
+
+
+
+
+.mobile-app h3{
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mobile-app p{
+    color: #f739c0;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(163, 163, 163, 0.2);
+    
+}
+.grid-item {
+    
+    transition: 0.3s;
+    border-radius: 5px; 
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.grid-item img{
+    width: 300px;
+    height: 300px;
+}

@@ -103,6 +103,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href ="static/_css/footer.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -154,7 +155,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <a href="#">Sobre Nosotros</a>
             </li>
             <li>
-                <a href="#">Donaciones</a>
+                <a href="login.php">Donaciones</a>
             </li>
             <li>
                 <a href="#">Contacto</a>
@@ -200,110 +201,132 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <div class="container principal">
             <h1 class="el-meme"> El Meme coin para la Comunidad.<br> Hecho por la comunidad.</h1>
         </div>
+        <h3>
+            <button class= "btn btn-dark" style="background-color:#38d7fd;"; ><a style = "color: black; text-decoration: None !important;" href="login.php"> Ingresa ya y empieza a invertir.</a></button>
+        </h3>
         <div class="container px-4 py-5" id="featured-3">
 
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
                 <div class="feature col">
-                    <div class="feature-icon bg-primary bg-gradient">
+                    <div class="feature-icon bg-danger bg-gradient" style="background-color:white !important;">
                         <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
                     </div>
-                    <h2>Cómo comprar Token?</h2>
+                    <div style = "color:white;margin:30px;">
+                    <h2 class= "features">Cómo comprar Token?</h2>
                     <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
+                    </div>
+                    <a href="#" style = "text-decoration:None !important; background-color:#f739c0; " class="btn btn-success">
+
                 Adquiere tu token YA
                 <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
               </a>
                 </div>
                 <div class="feature col">
-                    <div class="feature-icon bg-primary bg-gradient">
+                <div class="feature-icon bg-danger bg-gradient" style="background-color:white !important;">
+
                         <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
                     </div>
-                    <h2>Featured title</h2>
+                    <div style="color:white;margin:30px;">
+                    <h2  class= "features">Invierte YA </h2>
                     <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
+                    </div>
+                    
+                    <a href="#" style = "text-decoration:None !important;  background-color:#f739c0;" class="btn btn-success">
                 Empezar a comprar TOKENS
                 <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
               </a>
                 </div>
+
+
                 <div class="feature col">
-                    <div class="feature-icon bg-primary bg-gradient">
+                <div class="feature-icon bg-danger bg-gradient" style="background-color:white !important;">
                         <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
                     </div>
-                    <h2>Featured title</h2>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                LOW GAS FEES!
-                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-              </a>
+                    <div style="color:white; margin:30px;">
+                        <h2  class= "features">Sencillo y Seguro</h2>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    </div>    
+                        <a href="#" style = "text-decoration:None !important; background-color:#f739c0;" class="btn btn-success">
+                            LOW GAS FEES!
+                            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                        </a>
                 </div>
             </div>
         </div>
 
-        <div class="container">
-
-            <h3>
-                Ingenuix es una cadena de bloques descentralizada creada para permitir aplicaciones escalables y fáciles
-                de usar para todo el mundo.
-            </h3>
-        </div>
+  
     </section>
 
 
-    <section class="iniciar-sesion">
-      
 
-        <form class="box" action ="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-               
-                <h2 class="iniciar-sesion-h2">
-                    Ingresa YA para empezar a comprar TOKENS
+
+    <div class="container">
+        <h3>
+            Ingenuix enlistada en:
+        </h3>
+        <div class="row">
+            <div class="col">
+                <img src="static/bithumb.png" class="img-fluid" alt="bithumb">
+
+        </div>
+    <div class="col">
+        <img src="static/kucoin.png" class="img-fluid" alt="kucoin">
+    </div>
+    <div class="col">
+    <img style = "width:200px; height:100px;" src="static/binance.png"  alt="binance">
+
+    </div>
+  </div>
+
+
+</div>
+<button class="btn btn-dark" style="margin-bottom:1rem;margin-top:2rem;margin-left:40%;text-alignment:center;"><a href="#" style="color:white; text-decoration:None;">Más Exchanges</a></button>
+
+
+
+
+
+<footer>
+    <div class = "footer-container">
+        <div class="footer">
+            <div class ="footer-heading footer-1">
+                <h2>
+                    Sobre Nosotros
                 </h2>
-                <input type="text" name  = "username" placeholder ="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
-                <label for="">Username</label>
-            
-                <input type="text" name  = "" placeholder ="Password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
-                <label for="">Contrasena</label>
-                <input type="submit" value = "Submit">
-            <small>no tienes cuenta aún? <a href="#"> Registrate ya</a></small>
-        </form>
+                <a href="">Blog</a>
+                <a href="">Demo</a>
+                <a href="">Customers</a>
+                <a href="">Investors</a>
+            </div>
         
-    </section>
-    <section class="ingenuix-numeros">
-        <div class="grid-container">
-            <h3>Ingenuix en numeros</h3>
-        </div>
-        <div class="grid-item">
-            <h4>
-                LOW FEES
-            </h4>
-
-        </div>
-        <div class="grid-item">
-            <h4>
-                More People
-            </h4>
-        </div>
-        <div class="grid-item">
-            <h4>
-                Scalability
-
-            </h4>
-
-        </div>
-        <div class="grid-item">
-            <h4>
-                Security 4 everyone
-            </h4>
-
-        </div>
-        <div class="grid-item">
-            <h4>Forkless and Futured proof</h4>
-
-        </div>
+            <div class ="footer-heading footer-2">
+                <h2>
+                    Contact Us
+                </h2>
+                <a href="">Jobs</a>
+                <a href="">Contact</a>
+                <a href="">Join Us</a>
+                <a href="">Support</a>
+                <a href="">Sponsorship</a>
+            </div>
+            <div class ="footer-heading footer-3">
+                <h2> 
+                    Social media
+                </h2>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+                <a href="">Facebook</a>
+                <a href="">LinkedIn</a>
+            </div>
+    </div>
 
 
-    </section>
 
+</footer>
+
+
+ 
+    
 </body>
 <script src="static/_js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

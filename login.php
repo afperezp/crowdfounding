@@ -138,15 +138,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <h2 class="iniciar-sesion-h2">
                     Login y empieza a comprar TOKENS
                 </h2>
-                <input type="text" name  = "" placeholder ="Email" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>" >
+                <input type="text" name  = "username" placeholder ="Username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>" >
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
                 <label for="">Email</label>
             
-                <input type="text" name  = "" placeholder ="Password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
+                <input type="password" name  = "password" placeholder ="Password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
                 <label for="">Contrasena</label>
                 <input type="submit" value = "login">
-            <small>no tienes cuenta aún? <a href="signup.php"> Registrate ya</a></small>
+            <small>no tienes cuenta aún? <a href="signup.php"> Registrate ya!</a></small>
         </form>
         
 </section>
