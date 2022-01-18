@@ -19,7 +19,7 @@ header {
 
 h1 {
     font-size: 60px;
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -60,6 +60,7 @@ nav {
 }
 
 ul {
+    margin-top:5px ;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -72,7 +73,7 @@ li>a {
     font-size: 21px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #38d7fd;
+    color: white;
     text-decoration: none;
     letter-spacing: 0.3px;
     padding: 10px 14px;
@@ -82,7 +83,8 @@ li>a:hover {
     background-color: #38d7fd;
     border-radius: 40px;
     transition: 0.1s ease;
-    color: #f739c0;
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -183,6 +185,9 @@ section.iniciar-sesion {
 .card3:hover {
     transform: rotateY(180deg);
 }
+.card4:hover {
+    transform: rotateY(180deg);
+}
 
 .container {
     position: relative;
@@ -211,6 +216,10 @@ section.iniciar-sesion {
 .card3>.container:after {
     background-image: linear-gradient( 135deg, #ffab1d, #f8501c);
 }
+.card4>.container:after {
+    background-image: linear-gradient( 135deg, #ffab1d, #f8501c);
+}
+
 
 .details {
     padding: 20px 10px;

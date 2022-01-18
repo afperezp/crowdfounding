@@ -192,6 +192,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
             </div>
         </div>
+        <div class="card card4">
+            <div class="container">
+                <img src="images/business-5475660.jpg" alt="bussiness">
+            </div>
+            <div class="details">
+                <h3>Ecosistema</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+            </div>
+        </div>
     </div>
 
     
