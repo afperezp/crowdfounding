@@ -144,7 +144,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <header>
         <h1>Ingeniux</h1><br>
-        <h5>Tu meme coin</h5>
+        <h5>Tu CryptoPlatform</h5>
     </header>
     <nav id="nav">
         <ul>
@@ -171,7 +171,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <section>
 
         <div class="container principal">
-            <h1 class="el-meme"> El Meme coin para la Comunidad.<br> Hecho por la comunidad.</h1>
+            <h1 class="el-meme"> La primera plataforma para apoyar nuevos crypto-proyectos.<br> Hecho por la comunidad.</h1>
         </div>
         <h3>
             <button class= "btn btn-lg ingresar-btn" style="background-color:#38d7fd;"; ><a style = "color: black; text-decoration: None !important;" href="login.php"> Ingresa ya y empieza a invertir.</a></button>
@@ -184,7 +184,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
                     </div>
                     <div style = "color:white;margin:30px;">
-                    <h2 class= "features">Cómo comprar Token?</h2>
+                    <h2 class= "features">Nuestro Token</h2>
                     <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                     </div>
                     <a href="#" style = "text-decoration:None !important; background-color:#f739c0; " class="btn btn-success">
@@ -199,7 +199,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
                     </div>
                     <div style="color:white;margin:30px;">
-                    <h2  class= "features">Invierte YA </h2>
+                    <h2  class= "features">Empieza a invertir </h2>
                     <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                     </div>
                     

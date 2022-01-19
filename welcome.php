@@ -14,9 +14,21 @@ require_once "config.php";
 $credit_card_number = $credit_card_day = $credit_card_month = $credit_card_cvv ="";
 $credit_card_number_err = $credit_card_day_err = $credit_card_month_err = $credit_card_cvv_err ="";
 
+$amount = "";
+$amount_err = "";
+
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
     // collect value of input field
+    if(empty(trim($_POST["amount"]))){
+        $amount_err = "Por favor ingresa una cantidad.";
+    }
+    else {
+        $amount = trim($_POST["amount"]);
+    }
+
     if(empty(trim($_POST["credit_card_number"]))){
         $credit_card_number_err  = "Please enter CC Number.";
     } 
@@ -48,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($credit_card_cvv_err) && empty($credit_card_day_err) && empty( $credit_card_month_err) && empty($credit_card_number_err)){
         $sql ="INSERT INTO credit_card_user (credit_card_number,credit_card_month, credit_card_day , credit_card_cvv, date_added, user_id) VALUES (?, ?, ?, ?, ?, ?)";
-        
+        $sql_2 = "INSERT INTO investments_user (amount, date, user_id, payment_method) VALUES (?, ?, ?, ?)";
         if($stmt = mysqli_prepare($connection, $sql)){
             $timezone = date_default_timezone_get();
             mysqli_stmt_bind_param($stmt ,"iiiibi", $credit_card_number, $credit_card_month, $credit_card_day, $credit_card_cvv, $timezone, $_SESSION['id']);
@@ -165,6 +177,14 @@ mysqli_close($connection);
                 <h5>
                     Gracias a ti, la economía decentralizada será un hecho apoyándonos en este y futuros proyectos!
                 </h5>
+                <div style ="background-color:white;">
+                    <h6 style ="font-size:2rem;">
+                        Proyectos Actuales
+                    </h6>
+                </div>
+                <button class ="btn btn-lg" style="background-color:black;"> <a href="Cardano.php" style ="text-decoration:none; color:white;"> Cardano </a></button>
+                <button class ="btn btn-lg" style="background-color:black;"> <a href="LaraCoin.php" style ="text-decoration:none; color:white;"> Lara Coin</a></button>
+                <button class ="btn btn-lg" style="background-color:black;"> <a href="XClone.php" style ="text-decoration:none; color:white;">XClone</a></button>
             </div>
             <div>
             <p>
@@ -177,15 +197,15 @@ mysqli_close($connection);
     </section>
     <section class ="message-preinvestment">
         <div class="box">
-    <div class ="inner-message-invest">
-        <span>
-        <h2>
-            Estás a 2 pasos de ser parte de la <br>
-            comunidad más grande en Crypto!
-        </h2>
-        </span>
-        
-    </div>
+            <div class ="inner-message-invest">
+                <span>
+                <h2>
+                    Estás a 2 pasos de ser parte de la <br>
+                    comunidad más grande en Crypto!
+                </h2>
+                </span>
+                
+            </div>
     </div>
     </section>
     <section class="tokens-calculator">
@@ -237,7 +257,7 @@ mysqli_close($connection);
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <label for="name" style  ="color:white;">Name</label>
+                                <label for="name" style = "color:white;">Name</label>
                                 <input class="form-control " id="name" type="text" placeholder="Enter your name">
                             </div>
                         </div>
